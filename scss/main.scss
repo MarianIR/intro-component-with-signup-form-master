@@ -1,0 +1,196 @@
+@import "variables", "reset";
+
+body {
+  width: 100%;
+  background-image: url("/images/bg-intro-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $primaryColor1;
+}
+
+.main-section {
+  width: 90%;
+  max-width: 50rem;
+  margin: 5rem auto;
+  @media (min-width: 1337px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 130rem;
+  }
+  .text-article {
+    width: 100%;
+    margin: 2rem auto;
+    @media (min-width: 1337px) {
+      max-width: 50rem;
+    }
+    .main-header {
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: bold;
+      color: #fff;
+      @media (min-width: 1337px) {
+        text-align: left;
+      }
+    }
+    .paragraph {
+      padding: 1rem 1rem 2rem;
+      text-align: center;
+      font-size: clamp($fontSize, 6vw, 2.5rem);
+      color: #fff;
+      @media (min-width: 1337px) {
+        text-align: left;
+      }
+    }
+  }
+  .input-section {
+    width: 100%;
+    @media (min-width: 1337px) {
+      max-width: 50rem;
+    }
+    .try-box {
+      padding: 2rem 0;
+      margin-bottom: 3rem;
+      border-radius: 1rem;
+      background-color: $accentColor;
+      box-shadow: 0px 7px 0px 0px rgba(130, 130, 130, 0.5);
+      .box-paragraph {
+        padding: 0 2rem;
+        margin: auto;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #fff;
+        strong {
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+    }
+    .form-section {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 1rem;
+      //   .input-container {
+      //     .input-dates {
+      //       .first-name {
+      //         .error-message {
+      //         }
+      //       }
+      //     }
+      //   }
+
+      //   .input-container {
+      //     .input-dates {
+      //       .last-name {
+      //         .error-message {
+      //         }
+      //       }
+      //     }
+      //   }
+      //   .input-container {
+      //     .input-dates {
+      //       .email-input {
+      //         .error-message {
+      //         }
+      //       }
+      //     }
+      //   }
+      //   .input-container {
+      //     .input-dates {
+      //       .password {
+      //         .error-message {
+      //         }
+      //       }
+      //     }
+      //   }
+      .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        padding: 2rem;
+        .input-dates {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          .first-name,
+          .last-name,
+          .email-input,
+          .password {
+            width: 100%;
+            padding: 1.5rem 0;
+            border-radius: 0.5rem;
+            border: 0.1rem solid $neutralColor2;
+            outline: none;
+            &::placeholder {
+              padding-left: 2rem;
+              font-weight: bold;
+              color: $neutralColor1;
+            }
+          }
+          .error-icon {
+            display: none;
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            margin-left: 10%;
+            text-align: center;
+          }
+        }
+        .error-message {
+          font-style: italic;
+          color: $primaryColor1;
+          margin-top: 0.5rem;
+        }
+      }
+      .free-trial {
+        display: block;
+        margin: 2rem auto;
+        width: 90%;
+        padding: 1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: $primaryColor2;
+        box-shadow: 0px 5px 0px 0px #209944;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+
+        &:hover {
+          opacity: 0.6;
+          transition: 0.3s ease-in-out;
+        }
+      }
+      .terms-services {
+        text-align: center;
+        display: block;
+        margin: 2rem auto;
+        width: 80%;
+        font-size: 1.2rem;
+        color: $neutralColor2;
+        padding-bottom: 2rem;
+        a {
+          color: $primaryColor1;
+          font-weight: bold;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  text-align: center;
+  display: block;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  background-image: url("/images/bg-intro-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(0deg, 100%, 74%);
+}
+
+.main-section {
+  width: 90%;
+  max-width: 50rem;
+  margin: 5rem auto;
+}
+@media (min-width: 1337px) {
+  .main-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 130rem;
+  }
+}
+.main-section .text-article {
+  width: 100%;
+  margin: 2rem auto;
+}
+@media (min-width: 1337px) {
+  .main-section .text-article {
+    max-width: 50rem;
+  }
+}
+.main-section .text-article .main-header {
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: bold;
+  color: #fff;
+}
+@media (min-width: 1337px) {
+  .main-section .text-article .main-header {
+    text-align: left;
+  }
+}
+.main-section .text-article .paragraph {
+  padding: 1rem 1rem 2rem;
+  text-align: center;
+  font-size: clamp(1.6rem, 6vw, 2.5rem);
+  color: #fff;
+}
+@media (min-width: 1337px) {
+  .main-section .text-article .paragraph {
+    text-align: left;
+  }
+}
+.main-section .input-section {
+  width: 100%;
+}
+@media (min-width: 1337px) {
+  .main-section .input-section {
+    max-width: 50rem;
+  }
+}
+.main-section .input-section .try-box {
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+  background-color: hsl(248deg, 32%, 49%);
+  box-shadow: 0px 7px 0px 0px rgba(130, 130, 130, 0.5);
+}
+.main-section .input-section .try-box .box-paragraph {
+  padding: 0 2rem;
+  margin: auto;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.main-section .input-section .try-box .box-paragraph strong {
+  color: #fff;
+  font-weight: bold;
+}
+.main-section .input-section .form-section {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.main-section .input-section .form-section .input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  padding: 2rem;
+}
+.main-section .input-section .form-section .input-container .input-dates {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-section .input-section .form-section .input-container .input-dates .first-name,
+.main-section .input-section .form-section .input-container .input-dates .last-name,
+.main-section .input-section .form-section .input-container .input-dates .email-input,
+.main-section .input-section .form-section .input-container .input-dates .password {
+  width: 100%;
+  padding: 1.5rem 0;
+  border-radius: 0.5rem;
+  border: 0.1rem solid hsl(246deg, 25%, 77%);
+  outline: none;
+}
+.main-section .input-section .form-section .input-container .input-dates .first-name::-moz-placeholder, .main-section .input-section .form-section .input-container .input-dates .last-name::-moz-placeholder, .main-section .input-section .form-section .input-container .input-dates .email-input::-moz-placeholder, .main-section .input-section .form-section .input-container .input-dates .password::-moz-placeholder {
+  padding-left: 2rem;
+  font-weight: bold;
+  color: hsl(249deg, 10%, 26%);
+}
+.main-section .input-section .form-section .input-container .input-dates .first-name:-ms-input-placeholder, .main-section .input-section .form-section .input-container .input-dates .last-name:-ms-input-placeholder, .main-section .input-section .form-section .input-container .input-dates .email-input:-ms-input-placeholder, .main-section .input-section .form-section .input-container .input-dates .password:-ms-input-placeholder {
+  padding-left: 2rem;
+  font-weight: bold;
+  color: hsl(249deg, 10%, 26%);
+}
+.main-section .input-section .form-section .input-container .input-dates .first-name::placeholder,
+.main-section .input-section .form-section .input-container .input-dates .last-name::placeholder,
+.main-section .input-section .form-section .input-container .input-dates .email-input::placeholder,
+.main-section .input-section .form-section .input-container .input-dates .password::placeholder {
+  padding-left: 2rem;
+  font-weight: bold;
+  color: hsl(249deg, 10%, 26%);
+}
+.main-section .input-section .form-section .input-container .input-dates .error-icon {
+  display: none;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 10%;
+  text-align: center;
+}
+.main-section .input-section .form-section .input-container .error-message {
+  font-style: italic;
+  color: hsl(0deg, 100%, 74%);
+  margin-top: 0.5rem;
+}
+.main-section .input-section .form-section .free-trial {
+  display: block;
+  margin: 2rem auto;
+  width: 90%;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: hsl(154deg, 59%, 51%);
+  box-shadow: 0px 5px 0px 0px #209944;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+.main-section .input-section .form-section .free-trial:hover {
+  opacity: 0.6;
+  transition: 0.3s ease-in-out;
+}
+.main-section .input-section .form-section .terms-services {
+  text-align: center;
+  display: block;
+  margin: 2rem auto;
+  width: 80%;
+  font-size: 1.2rem;
+  color: hsl(246deg, 25%, 77%);
+  padding-bottom: 2rem;
+}
+.main-section .input-section .form-section .terms-services a {
+  color: hsl(0deg, 100%, 74%);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.attribution {
+  text-align: center;
+  display: block;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+}
+.attribution a {
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
